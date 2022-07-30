@@ -673,13 +673,13 @@ local S, E = pcall(function()
                         if Target ~= nil then
                             AimlockTarget = Target
                             Aimbot.On = true
-                            Notify("FemWare", "Target: "..tostring(AimlockTarget), "", 3)
+                            Notify("GloryWare", "Target: "..tostring(AimlockTarget), "", 3)
                         end
                     end)
                 else
                     Aimbot.On = false
                     AimlockTarget = nil
-                    Notify("FemWare", "Disabled.", "", 0.5)
+                    Notify("GloryWare", "Disabled.", "", 0.5)
                 end
             end
         end)
@@ -878,7 +878,7 @@ local S, E = pcall(function()
     local function CheckStaff(Player)
         pcall(function()
             if Player:GetRankInGroup(1066925) > 1 or Player:GetRankInGroup(9630142) > 0 then
-                SGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Staff: " .. Player.Name; Icon = "rbxassetid://9327507243"; Duration = 120 })
+                SGui:SetCore("SendNotification", {Title = "GloryWare"; Text = "Staff: " .. Player.Name; Icon = "rbxassetid://0"; Duration = 120 })
             end
         end)
     end
